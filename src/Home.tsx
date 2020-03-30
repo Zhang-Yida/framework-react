@@ -1,20 +1,25 @@
 import React from 'react'
-
-import { Button } from 'antd'
 import { Link } from 'react-router-dom'
 
+import { Layout, Menu } from 'antd'
 import Clock from './components/Clock'
 
-function Home() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <Button type="primary">Antd Button</Button>
-        <Link to="/login">Login Link</Link>
-        <Clock></Clock>
-      </header>
-    </div>
-  )
+import styles from './styles/Home.module.less'
+
+const { Header, Sider, Content, Footer } = Layout
+class Home extends React.Component {
+  render() {
+    return (
+      <Layout>
+        <Sider className={styles.sider}></Sider>
+        <Layout>
+          <Header></Header>
+          <Content></Content>
+          <Footer></Footer>
+        </Layout>
+      </Layout>
+    )
+  }
 }
 
 export default Home
