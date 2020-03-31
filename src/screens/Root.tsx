@@ -1,10 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-
 import { Layout, Menu } from 'antd'
-import Clock from './components/Clock'
-
-import styles from './styles/Home.module.less'
+import styles from '../styles/Root.module.less'
 
 const { Header, Sider, Content, Footer } = Layout
 class Home extends React.Component {
