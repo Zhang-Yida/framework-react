@@ -1,5 +1,9 @@
 import React from 'react'
 
-class SKSider extends React.Component {}
+class SkSider extends React.Component {
+  render() {
+    return <div />
+  }
+}
 
-export default SKSider
+export default SkSider
