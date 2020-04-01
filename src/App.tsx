@@ -7,7 +7,7 @@ function App() {
   return (
     <HashRouter>
       <Switch>
-        <Route exact path="/" component={Root} />
+        <Route path="/" component={Root} />
         <Route exact path="/login" component={Login} />
       </Switch>
     </HashRouter>
