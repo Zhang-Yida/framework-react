@@ -1,11 +1,12 @@
 import React from 'react'
 
 type IProps = {}
-type IState = {
+type IStates = {
   date: Date
 }
 
-class Clock extends React.Component<IProps, IState> {
+class Clock extends React.Component<IProps, IStates> {
+  // eslint-disable-next-line react/sort-comp
   timerId: number
 
   constructor(props: IProps) {

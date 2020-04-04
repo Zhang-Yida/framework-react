@@ -1,7 +1,7 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import PageComponents from '../screens'
-import menuData, { IMenu, IMenuBase } from './Config'
+import menuData, { IMenu, IMenuBase } from '../mocks/Config'
 class SkRoutes extends React.Component {
   // 不包含子路由
   parseRoute = (route: IMenuBase) => {
