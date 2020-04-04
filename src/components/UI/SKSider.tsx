@@ -1,5 +1,6 @@
 import React from 'react'
 import { Menu } from 'antd'
+import { Link } from 'react-router-dom'
 import { IMenu, IMenuBase } from '../../mocks/Config'
 
 type IProps = {
@@ -27,7 +28,9 @@ class SkSider extends React.Component<IProps, IStates> {
 
     return (
       <Menu.Item key={path}>
-        <span>{label}</span>
+        <Link to={path}>
+          <span>{label}</span>
+        </Link>
       </Menu.Item>
     )
   }
@@ -38,10 +41,13 @@ class SkSider extends React.Component<IProps, IStates> {
       return this.parseMenu(menu)
     }
   }
+  handleMenuSelect = (menuItem: any) => {
+    console.log(menuItem)
+  }
   render() {
     const { menuData } = this.props
     return (
-      <Menu mode="inline" theme="dark">
+      <Menu mode="inline" onSelect={this.handleMenuSelect} theme="dark">
         {menuData.map(this.menuFactory)}
       </Menu>
     )
