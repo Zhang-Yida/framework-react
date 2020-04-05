@@ -1,7 +1,7 @@
 import React from 'react'
 import { Layout } from 'antd'
 import SkSider from '../components/UI/SKSider'
-import SkRoutes from '../routes/SkRoutes'
+import SkRoutes from '../routes'
 import styles from '../styles/Root.module.less'
 
 import menuData from '../mocks/Config'
